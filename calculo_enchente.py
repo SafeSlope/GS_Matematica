@@ -19,3 +19,14 @@ r_t = -2 * t**2 + 12 * t
 
 # Constant street drain capacity / drainage rate (in mm/h)
 drainage_rate = 8
+
+# =============================================================================
+# Step 2: Calculus Implementation (Derivative & Integral)
+# =============================================================================
+
+# Rate of Change (Derivative context): dh/dt = r(t) - drainage_rate (in mm/h)
+water_rise_rate = r_t - drainage_rate
+
+# Accumulation (Integral context): h(t) = integral of (dh/dt) dt (in mm, with h(0) = 0)
+h_t = sp.integrate(water_rise_rate, t)
+
