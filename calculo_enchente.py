@@ -13,3 +13,6 @@ chuva_r = -2*t**2 + 12*t
 
 # Constante de capacidade de drenagem/escoamento urbano (em mm/h)
 escoamento = 8
+
+# indicando a velocidade instantânea (em mm/h) com que o nível da água sobe ou desce.
+taxa_subida = chuva_r - escoamento
