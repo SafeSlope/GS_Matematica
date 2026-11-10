@@ -30,3 +30,13 @@ tempos_reais_positivos = sorted([
     if sol.evalf(chop=True).is_real and float(sol.evalf(chop=True)) > 0
 ])
 t_critico = tempos_reais_positivos[0]
+
+
+# Saida de Resultados
+print("\n--- SAFESLOPE: Previsão de Enchentes ---")
+print(f"Intensidade da chuva: {chuva_r} mm/h")
+print(f"A água está a subir a: {taxa_subida} mm/h")
+print(f"Nível total acumulado: {nivel_h} mm")
+print("----------------------------------------")
+print(f"ALERTA CRÍTICO: Risco de transbordamento! O limite de {limite_transbordamento}mm será atingido em {t_critico:.2f} horas.")
+print("\n")
