@@ -1,1 +1,0 @@
-# Usa esse arquivo para o codigo da gs de py
